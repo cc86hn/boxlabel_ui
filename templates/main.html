@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/styles.css') }}">
+        <title>CC86 Labels UI</title>
+    </head>
+    <body>
+
+        <div class="label-container full-screen" id="label-container">
+            <div class="label" id="label1">Label 1</div>
+            <div class="label" id="label2">Label 2</div>
+            <div class="label" id="label3">Label 3</div>
+            <!-- Add more labels as needed -->
+        </div>
+
+        <div class="label-details" id="label-details">
+            <button class="hide-details-btn" id="hide-details-btn">Hide Details</button>
+            <!-- Label details will be displayed here when clicked -->
+        </div>
+
+    <script src="{{ url_for('static', filename= 'js/main.js') }}"></script>
+    </body>
+</html>

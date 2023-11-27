@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.container {
+    display: flex;
+}
+
+.label-container {
+    flex: 0 0 auto; /* Fix size on the left */
+    width: 200px; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-right: 1px solid #ccc; /* Division line */
+}
+
+.label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.label:hover {
+    background-color: #e0e0e0;
+}
+
+.label-details {
+    flex: 1;
+    padding: 20px;
+    display: none;
+    background-color: #fff;
+}
+
+.hide-details-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.hide-details-btn:hover {
+    background-color: #bbb;
+}
+
+/* Add styling for the full-screen label container */
+.full-screen {
+    flex-direction: column; /* Display labels in a column for the full-screen view */
+    justify-content: center;
+    align-items: center;
+}
+
+.full-screen .label {
+    margin-bottom: 10px; /* Add spacing between labels in the full-screen view */
+    width: 100%; /* Make labels full width in the full-screen view */
+    text-align: center; /* Center text in the full-screen view */
+}
