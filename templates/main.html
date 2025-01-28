@@ -7,17 +7,18 @@
         <title>CC86 Labels UI</title>
     </head>
     <body>
+        <div class="flex-wrapper">
+            <div class="label-container full-screen" id="label-container">
+                <div class="label" id="label1">Label 1</div>
+                <div class="label" id="label2">Label 2</div>
+                <div class="label" id="label3">Label 3</div>
+                <!-- Add more labels as needed -->
+            </div>
 
-        <div class="label-container full-screen" id="label-container">
-            <div class="label" id="label1">Label 1</div>
-            <div class="label" id="label2">Label 2</div>
-            <div class="label" id="label3">Label 3</div>
-            <!-- Add more labels as needed -->
-        </div>
-
-        <div class="label-details" id="label-details">
-            <button class="hide-details-btn" id="hide-details-btn">Hide Details</button>
-            <!-- Label details will be displayed here when clicked -->
+            <div class="label-details" id="label-details">
+                <button class="hide-details-btn" id="hide-details-btn">Hide Details</button>
+                <!-- Label details will be displayed here when clicked -->
+            </div>
         </div>
 
     <script src="{{ url_for('static', filename= 'js/main.js') }}"></script>
